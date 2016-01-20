@@ -1,0 +1,16 @@
+<table class="table table-hover" style="width: 350px;">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Family</th>
+      <th><a href="#/new"><i class="glyphicon glyphicon-plus-sign"></i></a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-ng-repeat="person in persons">
+      <td>{{person.name}}</td>
+      <td>{{person.family}}</td>
+      <td><a href="#/edit/{{$index}}"><i class="glyphicon glyphicon-edit"></i></a> <a ng-click="delete()"><i class="glyphicon glyphicon-remove-circle"></i></a></td>
+    </tr>
+  </tbody>
+</table>
